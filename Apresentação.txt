@@ -1,0 +1,25 @@
+Demo 1
+
+- Instalar o terraform;
+- Criar um usuário na console AWS;
+- Configurar AWS CLI com access_key e secret_key;
+- Criar provider no terraform;
+- Criar arquivo ec2;
+- Demonstrar criação, comandos básicos, validate, count, destroy, apply, --auto-approve;
+- Criar um elastic ip e associar a instância ec2, remover as configs do count;
+** Destruir recursos
+
+- Criar vpc apartada para o novo ambiente, subnet, route table, internet gateway;
+- Criar security group;
+- Criar duas ec2, uma private e uma public;
+- Demonstrar o lifecycle com a opção create before destroy;
+
+
+Demo 2
+
+- Backend;
+- Criar a infraestrutura do backend com s3 e dynamodb;
+- Configurar o backend remoto diretório a parte, rodar o terraform init, nesse momento irá copiar o tfstate para o s3, apagar o tfstate e local, rodar terraform init novamente;
+- Validar backend remoto, rodando apply;
+- Trabalhar com as variáveis;
+- Criar um arquivo variables.tf;
