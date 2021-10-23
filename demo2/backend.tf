@@ -4,6 +4,9 @@ terraform {
     key            = "demo.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-state-lock"
+<<<<<<< HEAD
     profile        = "workshop-demo"
+=======
+>>>>>>> origin
   }
 }

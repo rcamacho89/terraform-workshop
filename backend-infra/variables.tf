@@ -7,7 +7,11 @@ variable "region" {
 
 variable "profile" {
   type    = string
+<<<<<<< HEAD
   default = "workshop-demo"
+=======
+  default = "gft-workshop"
+>>>>>>> origin
 }
 
 ## Bucket

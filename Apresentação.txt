@@ -22,6 +22,7 @@ Demo 2
 - Configurar o backend remoto diretório a parte, rodar o terraform init, nesse momento irá copiar o tfstate para o s3, apagar o tfstate e local, rodar terraform init novamente;
 - Validar backend remoto, rodando apply;
 - Trabalhar com as variáveis;
+<<<<<<< HEAD
 - Criar um arquivo variables.tf e terraform.tfvars;
 - Criar um arquivo locals.tf e demonstrar com tags de ec2;
 - Criar um arquivo outputs.tf e demonstrar os outputs de ec2 e recursos de rede;
@@ -37,3 +38,6 @@ Demo 3
 - Demonstrar o uso do módulo, como usar outputs;
 - Criar workspaces dev e prd;
 - Trabalhar com workspaces, criar os arquivos dev.tfvars e prd.tfvars.
+=======
+- Criar um arquivo variables.tf;
+>>>>>>> origin
