@@ -9,6 +9,7 @@ instance_type = "t2.micro"
 vpc_cidr_block     = "172.16.0.0/16"
 public_cidr_block  = "172.16.1.0/24"
 private_cidr_block = "172.16.2.0/24"
+workshop_subnets = ["172.16.1.0/24","172.16.2.0/24"]
 
 availability_zone = "us-east-1a"
 

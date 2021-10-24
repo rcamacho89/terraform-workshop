@@ -53,3 +53,7 @@ variable "default_cidr_block" {
 variable "sg_ingress_ports" {
   type = list(string)
 }
+
+variable "workshop_subnets" {
+  type = list(string)
+}

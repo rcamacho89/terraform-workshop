@@ -3,7 +3,6 @@
 module "infra_module" {
   source = "../demo2"
 
-
   profile = var.profile
   region  = var.region
 
@@ -14,11 +13,11 @@ module "infra_module" {
   ec2_public_name  = var.ec2_public_name
 
   ## NETWORK
-
   vpc_cidr_block     = var.vpc_cidr_block
   private_cidr_block = var.private_cidr_block
   public_cidr_block  = var.public_cidr_block
   availability_zone  = var.availability_zone
   sg_ingress_ports   = var.sg_ingress_ports
+  workshop_subnets   = var.workshop_subnets
 
 }

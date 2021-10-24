@@ -2,7 +2,6 @@ resource "aws_security_group" "allow_ssh" {
   name        = "allow_public_ssh"
   description = "Allow SSH inbound traffic"
   vpc_id      = aws_vpc.main.id
-<<<<<<< HEAD
 
   dynamic "ingress" {
     for_each = var.sg_ingress_ports
@@ -13,14 +12,6 @@ resource "aws_security_group" "allow_ssh" {
         protocol    = "tcp"
         cidr_blocks = [aws_vpc.main.cidr_block]
     }
-=======
-  ingress {
-    description = "SSH from VPC"
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = [aws_vpc.main.cidr_block]
->>>>>>> origin
   }
 
   egress {

@@ -1,6 +1,6 @@
 ## Outputs
 
-## ec2 outputs
+## EC2 OUTPUTS
 
 output "ec2_arn_output" {
     description = "The ec2 arn."
@@ -12,7 +12,12 @@ output "ec2_public_ip" {
     value = aws_instance.my_ec2_public.public_ip
 }
 
-## network outputs
+output "ec2_lookup_function" {
+    description = "The lookup function"
+    value = lookup(local.tags_ec2_private,"Department")
+}
+
+## NETWORK OUTPUTS
 
 output "vpc_id_output" {
     description = "The VPC id."
@@ -27,6 +32,16 @@ output "private_subnet" {
 output "public_subnet" {
     description = "The public private id."
     value = aws_subnet.public.id
+}
+
+output "vpc_cidr_block" {
+    description = "The VPC cidr block."
+    value = aws_vpc.main.cidr_block
+}
+
+output "workshop_subnets" {
+    description = "The workshop subnets"
+    value = element(var.workshop_subnets,1)
 }
 
 # ##### Data Source
