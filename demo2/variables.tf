@@ -12,7 +12,6 @@ variable "profile" {
 ## ec2
 
 variable "instance_ami" {
-<<<<<<< HEAD
   type = string
 }
 
@@ -26,18 +25,10 @@ variable "ec2_private_name" {
 
 variable "ec2_public_name" {
   type = string
-=======
-    type = string
-}
-
-variable "instance_type" {
-    type = string
->>>>>>> origin
 }
 
 ## Network
 
-<<<<<<< HEAD
 variable "vpc_cidr_block" {
   type = string
 }
@@ -61,25 +52,4 @@ variable "default_cidr_block" {
 
 variable "sg_ingress_ports" {
   type = list(string)
-=======
-variable "vpc_cidr_block"{
-    type = string
-}
-
-variable "public_cidr_block" {
-    type = string
-}
-
-variable "private_cidr_block" {
-    type = string
-}
-
-variable "availability_zone" {
-    type = string
-}
-
-variable "default_cidr_block" {
-    type = string
-    default = "0.0.0.0/0"
->>>>>>> origin
 }
