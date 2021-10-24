@@ -24,7 +24,7 @@ Demo 2
 - Trabalhar com as variáveis;
 - Criar um arquivo variables.tf e terraform.tfvars;
 - Criar um arquivo locals.tf e demonstrar com tags de ec2;
-- Criar um arquivo outputs.tf e demonstrar os outputs de ec2 e recursos de rede;
+- Criar um arquivo outputs.tf e demonstrar os outputs de ec2 e recursos de rede, demonstrar funções lookup e element;
 - Criar um data source nos outputs, demonstrar AZ de uma instância filtrando por tag;
 - Alterar configuração das ec2 para usar data source pegando a última ami amazon linux2;
 - Criar um novo arquivo security.tf e demonstrar o uso do Dynamic Block;

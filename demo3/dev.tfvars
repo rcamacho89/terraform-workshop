@@ -1,6 +1,7 @@
 ## Inputs
 
-region  = "us-east-1"
+environment = "dev"
+region  = "us-west-2"
 profile = "workshop-demo"
 
 instance_ami  = "ami-02e136e904f3da870"
@@ -11,7 +12,7 @@ public_cidr_block  = "172.16.1.0/24"
 private_cidr_block = "172.16.2.0/24"
 workshop_subnets = ["172.16.1.0/24","172.16.2.0/24"]
 
-availability_zone = "us-east-1a"
+availability_zone = "us-west-2a"
 
 ec2_private_name = "gft-workshop-private"
 ec2_public_name  = "gft-workshop-public"
