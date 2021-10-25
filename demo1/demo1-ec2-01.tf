@@ -3,15 +3,14 @@
 resource "aws_instance" "my_ec2" {
   ami           = "ami-02e136e904f3da870"
   instance_type = "t2.micro"
-  count = 1
 
   tags = {
-    "Name" = "gft-workshop0${count.index+1}"
+    "Name" = "gft-workshop01"
   }
 }
 
 resource "aws_eip" "public_ec2_ip" {
     count = length(aws_instance.my_ec2)
-    instance = aws_instance.my_ec2[count.index].id
+    instance = aws_instance.my_ec2.id
     vpc = true
 }
