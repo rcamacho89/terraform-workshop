@@ -8,6 +8,7 @@ It will give you some examples of how to use Terraform in a basic way.
 * Variables;
 * Implicity dependency;
 * Explicity dependecy;
+* Remote backend;
 * Variables;
 * Outputs;
 * Data source;
@@ -61,8 +62,6 @@ terraform plan
 terraform apply
 ```
 
+# Be careful
+
 Don't forget to destroy your environment after test your resources, it is good to know that you can be charged for it ! :)
-
-## Contributing
-
-Feel free to contribue with us !
