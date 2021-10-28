@@ -1,6 +1,6 @@
 # This is a basic Terraform Workshop
 
-It will give you some examples of how to use Terraform in a basic way.
+It will give you some examples of how to use Terraform in a basic way. We will work with the AWS provider.
 
 # Terraform Topics 
 
