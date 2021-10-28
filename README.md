@@ -21,7 +21,7 @@ It will give you some examples of how to use Terraform in a basic way.
 
 Use Terraform Official Website to download the binary [Terraform Download](https://www.terraform.io/downloads.html).
 
-Once you have set up your environment to use the Terraform binary, you can configure your AWS CLI to use a profile. [Terraform Download](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+Once you have set up your environment to use the Terraform binary, you can configure your AWS CLI to use a profile. [Terraform Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
 This example can be applied in Windows or Linux.
 
