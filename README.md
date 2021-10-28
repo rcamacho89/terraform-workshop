@@ -25,6 +25,8 @@ Once you have set up your environment to use the Terraform binary, you can confi
 
 This example can be applied in Windows or Linux.
 
+You must create an iam user with Programmatic Access in your AWS environment, because the Terraform will interact with AWS APIs and of course this user needs special privileges to create your resources.
+
 ```bash
 # aws configure --profile (PROFILE_NAME)
 AWS Access Key ID [None]: (YOUR ACCESS KEY ID)
@@ -32,9 +34,6 @@ AWS Secret Access Key [None]: (YOUR SECRET ACCESS KEY)
 Default region name [None]: (CHOOSE YOUR DEFAULT REGION, EX: us-east-1)
 Default output format [None]: JSON
 ```
-
-## Usage
-
 AWS Environment:
 
 - VPC;
@@ -46,9 +45,9 @@ AWS Environment:
 - EC2 private subnet;
 - EC2 public subnet.
 
-The environment above we will have after use a complete module.
+## Usage
 
-After access some example, just run these sequence of commands :
+After access some demo directory, just run these sequence of commands :
 
 ```bash
 TERRAFORM COMMANDS:
@@ -61,6 +60,8 @@ terraform plan
 
 terraform apply
 ```
+
+If you're having some issue on this step, please check your profile or provider configuration.
 
 # Be careful
 
