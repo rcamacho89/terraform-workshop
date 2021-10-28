@@ -1,7 +1,7 @@
 ## Infra module
 
 module "infra_module" {
-  source = "C:/Users/renan.LAPTOP-JP8E5P2E/Documents/Github/GFT/Terraform/terraform-workshop/demo2"
+  source = "../../demo2/exemplo_a"
 
   profile = var.profile
   region  = var.region

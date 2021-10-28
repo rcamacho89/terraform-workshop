@@ -9,7 +9,7 @@ variable "profile" {
 }
 
 
-## ec2
+## EC2
 
 variable "instance_ami" {
   type = string
@@ -27,7 +27,7 @@ variable "ec2_public_name" {
   type = string
 }
 
-## Network
+## NETWORK
 
 variable "vpc_cidr_block" {
   type = string
