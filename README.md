@@ -1,4 +1,4 @@
-# This is a basic workshop Terraform
+# This is a basic Terraform Workshop
 
 It will give you some examples of how to use Terraform in a basic way.
 
