@@ -5,7 +5,7 @@ resource "aws_instance" "my_ec2" {
   instance_type = "t2.micro"
 
   tags = {
-    "Name" = "gft-workshop-01"
+    "Name" = "workshop-01"
   }
 
   depends_on = [aws_s3_bucket.demo_bucket]

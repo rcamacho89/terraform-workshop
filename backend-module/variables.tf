@@ -14,7 +14,7 @@ variable "profile" {
 
 variable "bucket_name" {
   type    = string
-  default = "terraform-backend-demo-gft"
+  default = "terraform-backend-demo-90909999"
 }
 
 ## DynamoDB

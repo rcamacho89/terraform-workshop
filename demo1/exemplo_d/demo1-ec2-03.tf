@@ -7,7 +7,7 @@ resource "aws_instance" "my_ec2_private" {
   subnet_id       = aws_subnet.private.id
 
   tags = {
-    "Name" = "gft-workshop-private"
+    "Name" = "workshop-private"
   }
 
 }
@@ -19,7 +19,7 @@ resource "aws_instance" "my_ec2_public" {
   subnet_id       = aws_subnet.public.id
 
   tags = {
-    "Name" = "gft-workshop-public"
+    "Name" = "workshop-public"
   }
 
 }
