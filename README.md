@@ -27,6 +27,8 @@ This example can be applied in Windows or Linux.
 
 You must create an iam user with Programmatic Access in your AWS environment, because the Terraform will interact with AWS APIs and of course this user needs special privileges to create your resources.
 
+# Configure your AWS CLI
+
 ```bash
 # aws configure --profile (PROFILE_NAME)
 AWS Access Key ID [None]: (YOUR ACCESS KEY ID)
@@ -52,9 +54,9 @@ After access some demo directory, just run these sequence of commands :
 ```bash
 TERRAFORM COMMANDS:
 
-terraform validate
+terraform init
 
-terraform init 
+terraform validate
 
 terraform plan
 
