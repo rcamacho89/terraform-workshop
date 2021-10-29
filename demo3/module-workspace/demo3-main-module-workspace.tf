@@ -1,7 +1,7 @@
 ## Infra module
 
 module "infra_module" {
-  source = "../demo2/exemplo_a"
+  source = "../../demo2/exemplo_a"
 
   profile = var.profile
   region  = var.region
